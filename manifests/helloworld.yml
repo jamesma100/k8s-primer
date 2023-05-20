@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hello
+      version: v01
+  template:
+    metadata:
+      name: hello-world-pod
+      labels:
+        app: hello
+        version: v01
+    spec:
+      containers:
+      - name: hello-world
+        image: simpleflask
+        imagePullPolicy: Never
+      restartPolicy: Always
