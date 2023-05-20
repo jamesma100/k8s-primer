@@ -2,11 +2,10 @@
 
 ## Prerequisites
 1. Install [minikube](https://minikube.sigs.k8s.io/docs/start/) and [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
-2. Clone the repo and build Docker image
+2. Clone the repo
 ```
 $ git clone git@github.com:jamesma100/k8s-primer.git
-$ cd app/
-$ docker build -t simpleflask .
+$ cd k8s-primer/
 ```
 Make sure you can see your image by running `docker images`.
 
